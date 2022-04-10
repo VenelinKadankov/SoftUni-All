@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+}
+
+.container:nth-child(1){
+    width: 70%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+span{
+    flex-grow: 1;
+    border: 1px black solid;
+    padding: 1rem;
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+}
+
+.week span:first-child,
+span:nth-child(7) {
+    width: 100%;
+}

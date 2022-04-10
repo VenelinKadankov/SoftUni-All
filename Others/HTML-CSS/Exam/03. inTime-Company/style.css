@@ -1,0 +1,322 @@
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
+@import url("reset.css");
+@import url("typography.css");
+
+:root {
+  --light-blue: #36a7b7;
+  --header-blue: #42b6c9;
+  --button-hero-blue: #008cba;
+  --hr-blue: #35b2c4;
+  --button-blue: #6bbfff;
+  --letters-grey: #4e4551;
+  --buttons-grey: #454545;
+  --section-background-grey: #393f43;
+  --input-background-grey: #545a5e;
+  --backgound-grey: #eef0f1;
+  --letters-white: #fefaf6;
+  --footer-blue: #176ea0;
+  --footer-upper-back: #2f3539;
+  --foter-lower-back: #262b2f;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 21px;
+}
+
+/* Header-------------------------------------- */
+
+header {
+  padding: 2rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--letters-grey);
+}
+
+header span {
+  color: var(--button-hero-blue);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+  margin-right: 5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--letters-grey);
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid var(--header-blue);
+}
+
+/* Main--------------------------- */
+
+.hero {
+  font-family: Helvetica, sans-serif;
+  color: var(--letters-grey);
+  height: 70vh;
+  background-image: url("./images/slide2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero div {
+  line-height: 1.2;
+  margin-left: 10rem;
+  margin-top: 8rem;
+  position: relative;
+  height: 250px;
+  width: 30%;
+  padding: 1rem;
+}
+
+.hero div h1 {
+  font-family: Helvetica, sans-serif;
+  color: var(--letters-white);
+  position: absolute;
+  z-index: 4;
+}
+
+.hero div::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+  font-size: 1rem;
+  position: absolute;
+  z-index: 4;
+  bottom: 1.5rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--button-hero-blue);
+  color: var(--letters-white);
+  border: none;
+  border-radius: 25px;
+}
+
+.welcome {
+  font-family: Helvetica, sans-serif;
+  color: var(--letters-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 10rem;
+}
+
+.welcome hr {
+  color: var(--hr-blue);
+  width: 9%;
+  border: 1px solid var(--hr-blue);
+}
+
+.welcome p {
+  font-size: 23px;
+}
+
+.welcome button {
+  margin: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--letters-white);
+  background-color: var(--buttons-grey);
+  border: none;
+  border-radius: 25px;
+  font-size: 23px;
+}
+
+.services {
+  font-family: Helvetica, sans-serif;
+  color: var(--letters-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgound-grey);
+  padding: 3rem 0;
+}
+
+.services ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.services ul li {
+  background-color: white;
+  width: 25%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.services ul li img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.services hr {
+  color: var(--letters-grey);
+  width: 9%;
+  border: 2px solid var(--letters-grey);
+  margin-bottom: 3rem;
+}
+
+.services ul li h4 {
+  margin: 1rem 1rem;
+}
+
+.services ul li p {
+  padding: 0 1rem;
+  font-size: 23px;
+  margin-bottom: 1rem;
+}
+
+.services ul li button {
+  color: var(--letters-white);
+  padding: 0.5rem 1rem;
+  background-color: var(--buttons-grey);
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
+  margin-bottom: 2rem;
+}
+
+.subscribe {
+  font-family: Helvetica, sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--letters-white);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--section-background-grey);
+}
+
+.subscribe h2 {
+  letter-spacing: 2px;
+}
+
+.subscribe hr {
+  color: var(--letters-white);
+  width: 9%;
+  border: 2px solid var(--letters-white);
+}
+
+.subscribe p {
+  font-size: 23px;
+  margin-bottom: 1rem;
+}
+
+.subscribe form {
+  width: 50%;
+}
+
+.subscribe form input {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--input-background-grey);
+  padding-left: 1rem;
+  font-size: 23px;
+  border: none;
+}
+
+.subscribe form button {
+  width: 25%;
+  height: 50px;
+  background-color: var(--button-blue);
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
+  color: var(--letters-white);
+  text-transform: uppercase;
+}
+
+/* Footer------------------- */
+
+.upper__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--letters-white);
+  background-color: var(--footer-upper-back);
+  padding: 3rem;
+}
+
+.upper__footer nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.upper__footer li {
+  padding: 0.5rem 0;
+  font-size: 23px;
+}
+
+.upper__footer a {
+  text-decoration: none;
+  color: var(--letters-white);
+}
+
+.address li:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.social ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.lower__footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  color: var(--letters-white);
+  background-color: var(--foter-lower-back);
+}
+
+.lower__footer p {
+  margin: auto;
+  font-size: 23px;
+}
+
+.lower__footer p span {
+  color: var(--footer-blue);
+}
+
+@media screen and (max-width: 1750px) {
+  .hero div {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+    .hero div {
+      width: 50%;
+    }
+  }

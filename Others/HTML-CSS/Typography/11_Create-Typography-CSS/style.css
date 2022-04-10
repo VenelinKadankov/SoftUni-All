@@ -1,0 +1,47 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+.heading {
+    font-family: Georgia, serif;
+}
+
+.level2List {
+    list-style-type: disc;
+}
+
+.level3List {
+    list-style-type: circle;
+}
+
+table {
+    width: 100%;
+    /* border: black 1px solid; */
+    background-color: rgb(226, 226, 226);
+}
+
+th {
+    text-align: left;
+    background-color: rgb(194, 192, 192);
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(255, 255, 255);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: solid rgb(221, 221, 221) 5px;
+}
+
+blockquote p, blockquote cite {
+    padding: 10px;
+}
+
+cite {
+    position: relative;
+    left: 95%;
+}

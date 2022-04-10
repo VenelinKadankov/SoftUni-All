@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 10rem;
+    flex-wrap: wrap;
+}
+
+.title__section{
+    border-bottom: 2px solid black;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
+
+/* aside {
+    align-self: top;
+} */
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section__blockquote{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__blockquote:first-child{
+    flex-basis: 100%;
+}
+
+.section__blockquote p:nth-child(3){
+    flex-basis: 50%;
+}
+
+.section__blockquote blockquote:nth-child(4){
+    flex-basis: 35%;
+    padding-left: 1rem;
+    align-items: top;
+    justify-content: center;
+}
+
+img{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+.first__immage{
+    float: right;
+    margin: 0.5rem;
+}
+
+.second__immage{
+    float: left;
+    margin: 1rem;
+}
+
+blockquote {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, serif;
+    border-left: 2px solid gray;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+h2, h3{
+    font-family:  Georgia, serif;
+}
+
+@media screen and (max-width: 1400px) {
+    .page{
+        margin: 5rem;
+    }
+
+    .section__blockquote blockquote:nth-child(4){
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page{
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .second__immage,
+    .first__immage{
+        float: none;
+    }
+}

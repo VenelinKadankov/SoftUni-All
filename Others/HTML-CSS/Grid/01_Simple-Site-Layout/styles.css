@@ -1,0 +1,52 @@
+header,
+aside,
+main,
+footer {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 16px;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.ancor {
+    text-decoration: none;
+}
+
+ul.sidebar {
+    list-style-type: none;
+}
+
+.task{
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-bottom: 5px;
+}

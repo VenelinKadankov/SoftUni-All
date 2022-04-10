@@ -1,0 +1,21 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+h1, nav, ul, li{
+    display: inline-block;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+nav {
+    margin-left: 200px;
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: green;
+}

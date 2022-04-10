@@ -1,0 +1,6 @@
+UPDATE Reports
+	SET CloseDate = CURRENT_TIMESTAMP
+	WHERE CloseDate IS NULL
+
+SELECT *
+	FROM Reports

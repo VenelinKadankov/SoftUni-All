@@ -1,0 +1,53 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 1rem;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  max-width: 15vw;
+  height: 35rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+span {
+  border: 1px solid black;
+  width: 2rem;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+span.el {
+    order: -11;
+}
+
+.two {
+    order: -10;
+}
+
+.tw {
+    order: -9;
+}
+
+.four {
+    order: -8;
+}
+
+.eight {
+    order: -7;
+}
+
+.nine {
+    order: -6;
+}
+
+.six {
+    order: -5;
+}
+
+.five {
+    order: -4;
+}
