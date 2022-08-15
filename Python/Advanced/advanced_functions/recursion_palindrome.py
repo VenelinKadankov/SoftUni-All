@@ -9,7 +9,7 @@ def palindrome(word, index):
     else:
         index += 1
         return palindrome(word, index)
-    
+
 
 print(palindrome("asdfdsasa", 0))
 print(palindrome("peter", 0))
